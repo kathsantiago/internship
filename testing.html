@@ -11,86 +11,294 @@
 
 <!-- Nav Bar -->
 <nav class="navbar navbar-expand-xl m-0 p-0 shadow-lg">
-        <div class="container-xxl">
-            
-        <!-- Nav Links Left-->
-        <div
-          class="collapse navbar-collapse align-items-baseline justify-content-around text-start text-xl-center row p-0 m-0 top-0" 
-          id="main-nav">
-            <ul class="navbar-nav align-items-baseline align-items-xl-center fw-medium col justify-content-center">
-                <li class="nav-item mx-3 d-xl-inline d-none">
-                    <a href="#" class="nav-link">For Sale</a>
-                </li>
-                <li class="nav-item mx-3 d-xl-inline d-none">
-                    <a href="#" class="nav-link">For Rent</a>
-                </li>
-                <li class="nav-item mx-3 d-xl-inline d-none">
-                    <a href="#" class="nav-link">Sell Your property</a>
-                </li>
-                <li class="nav-item mx-3 d-xl-inline d-none">
-                    <a href="#" class="nav-link"><img src="img/philproperties-logo.png" alt=""></a>
-                </li>
-                <li class="nav-item mx-3 d-xl-inline d-none">
-                    <a href="#beOurAgent" class="nav-link">Be Our Agent</a>
-                </li>
-                <li class="nav-item mx-3 d-xl-inline d-none">
-                    <a href="#aboutUs" class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item mx-3 d-xl-inline d-none">
-                    <a href="#contactUs" class="nav-link">Contact Us</a>
-                </li>
-
-            </ul>
-        </div>
-
-        <!-- toggle button -->
-        <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" 
-        aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-    </nav>
+    <a class="navbar-brand d-xl-none d-inline ps-3" href="#"
+      ><img src="img/philproperties-logo.png" alt="logo"
+    /></a>
+    <button
+      class="navbar-toggler border-0 pe-3"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#main-nav"
+      aria-controls="main-nav"
+      aria-expanded="false"
+      aria-label="Toggle Navigation"
+    >
+      <i
+        class="bi bi-list"
+        style="font-size: 2.5rem; color: var(--darkblue)"
+      ></i>
+      <i
+        class="bi bi-x"
+        style="
+          font-size: 2.5rem;
+          color: white;
+          z-index: 999;
+          position: relative;
+          background-color: var(--darkblue);
+          padding: 0 0.25rem 0 0.25rem;
+          border-radius: 50%;
+        "
+      ></i>
+    </button>
+    <div
+      class="collapse navbar-collapse align-items-baseline justify-content-around text-start text-xl-center row p-0 m-0 top-0"
+      id="main-nav"
+    >
+      <ul
+        class="navbar-nav align-items-baseline align-items-xl-center fw-medium col justify-content-center"
+      >
+        <li class="nav-item mx-3 d-xl-inline d-none">
+          <a class="nav-link" href="#"></a>
+        </li>
+        <li class="nav-item mx-3 d-xl-inline d-none">
+          <a class="nav-link" href="#">For Sale</a>
+        </li>
+        <li class="nav-item mx-3 d-xl-inline d-none">
+          <a class="nav-link" href="#">For Rent</a>
+        </li>
+        <li class="nav-item mx-3 d-xl-inline d-none">
+          <a class="nav-link" href="#">Sell Your Property</a>
+        </li>
+        <li class="nav-item mx-3 d-xl-inline d-none">
+          <a class="nav-link d-xl-inline d-none" href="#"
+            ><img src="img/philproperties-logo.png" alt="logo"
+          /></a>
+        </li>
+        <li class="nav-item mx-3 d-xl-inline d-none">
+          <a class="nav-link" href="#">Be Our Agent</a>
+        </li>
+        <li class="nav-item mx-3 d-xl-inline d-none">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item mx-3 d-xl-inline d-none">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item mx-3 d-xl-inline d-none">
+          <a class="nav-link" href=""
+            ><i
+              class="bi bi-calculator align-items-center"
+              style="font-size: 2rem; color: white"
+            ></i
+          ></a>
+        </li>
+        <li class="nav-item dropdown d-xl-none d-inline ms-5 mt-5">
+          <a
+            class="nav-link dropdown-toggle fs-4"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Links
+          </a>
+          <ul class="dropdown-menu border-0">
+            <li><a class="dropdown-item" href="#">Home</a></li>
+            <li><a class="dropdown-item" href="#">Videos</a></li>
+            <li><a class="dropdown-item" href="#">Join Us</a></li>
+            <li><a class="dropdown-item" href="#">Partners</a></li>
+            <li><a class="dropdown-item" href="#">Careers</a></li>
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown d-xl-none d-inline ms-5">
+          <a
+            class="nav-link dropdown-toggle fs-4"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Properties
+          </a>
+          <ul class="dropdown-menu border-0">
+            <li><a class="dropdown-item" href="#">For Sale</a></li>
+            <li><a class="dropdown-item" href="#">For Rent</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Sell Your Property</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Buyer Information Form</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown d-xl-none d-inline ms-5">
+          <a
+            class="nav-link dropdown-toggle fs-4"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Tools
+          </a>
+          <ul class="dropdown-menu border-0">
+            <li><a class="dropdown-item" href="#">Loan calculator</a></li>
+            <li><a class="dropdown-item" href="#">Loan Requirements</a></li>
+            <li><a class="dropdown-item" href="#">Loan Processing</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Account Login</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="mapembed d-xl-none d-lg-inline d-none col">
+        <li class="nav-link">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1730196542785!2d121.05801057581287!3d14.589214877353928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c94ff2bca9b7%3A0xf3ba9eb2aff1b683!2sPhilproperties!5e0!3m2!1sen!2sph!4v1681793039262!5m2!1sen!2sph"
+            width="700"
+            style="border: 0; height: 90dvh; top: 0; right: 0"
+            class="position-absolute"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </li>
+      </ul>
+      <ul class="mapembed d-lg-none d-inline col p-0">
+        <li class="nav-link">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1730196542785!2d121.05801057581287!3d14.589214877353928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c94ff2bca9b7%3A0xf3ba9eb2aff1b683!2sPhilproperties!5e0!3m2!1sen!2sph!4v1681793039262!5m2!1sen!2sph"
+            height="150"
+            style="
+              border: 0;
+              width: 100vw;
+              bottom: 10dvh;
+              left: 0;
+              position: absolute;
+            "
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </li>
+      </ul>
+      <ul
+        class="bot-links d-xl-none d-block col-12 position-absolute text-center p-0 m-0"
+      >
+        <li
+          class="bt-fb m-0 p-0 shadow-lg d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="#"
+            class="nav-link flex-wrap d-flex align-items-center justify-content-center"
+            ><i class="bi bi-facebook px-2" style="font-size: 1.5rem"></i
+            >Follow us on Facebook</a
+          >
+        </li>
+        <li
+          class="bt-call m-0 p-0 d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="#"
+            class="nav-link flex-wrap d-flex align-items-center justify-content-center text-white"
+            ><i
+              class="bi bi-telephone px-2"
+              style="font-size: 1.5rem; color: white"
+            ></i
+            >(02) 7211 2274</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
 
     <!-- Partner Logo Section-->
-<section id="rep">
+<section class="container-fluid" id="rep">
     <div class="container p-5">
         <div class="partners-page-header">
-            <h1>Estate Developers</h1>
-            <h1>in the Philippines</h1>
-            <p>Philproperties International Corp. Has broadened its marketing reach
-                by partnering with BIG real estate players in the Philippines such as
-                Ayala Land Inc., SMDC, Vista Land, Sta Lucia, Robinsons Land, Filinvest and many more.
-            </p>
-
-            <div class="container m-5">
-                <a class="btn-light p-2 rounded border-5" href="#" class="btn">View All</a>
-            </div>
+            <div class="row opp col-7 align-content-start">
+              <h1 class="fw-bolder pt-5">Estate Developers</h1>
+                <h2 >in the Philippines</h2>
+                <p class="fw-lighter ">Philproperties International Corp. Has broadened its marketing reach by partnering with BIG real estate players in the Philippines such as Ayala Land Inc., SMDC, Vista Land, Sta Lucia, Robinsons Land, Filinvest and many more.</p>
+            </div> 
         </div>
+
+        <div class="container m-5">
+                  <a class="btn-light rounded-pill border-5 px-5 py-3 mb-5" href="#">View All</a>  
+            </div>
     </div>
 </section>
 
+
+<!-- Our Partners Section -->
     <div class="container my-5 " id="partners-wrap">
         <h1 class="text-center" id="opp-title">Our Partners</h1>
-        <hr>
+        <div class="horizontal-line" id="title-line"></div>
 
-        <div class="container my-lg-5" id="partners">
-            <div class="row justify-content-between" id="partners-logo">
-                <div class="col-md-3">
-                    <img src="img/avida.png" alt="">
+<!-- All Partners -->
+        <div class="container-xl" id="partners">
+           <div class="row container-sm p-lg-1">
+            <div class="col-sm-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/avida-opp.png" alt="Avida"></a>
                 </div>
-                <div class="col-md-3">
-                    <img src="img/dmci-homes.png" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="img/filinvest.png" alt="">
-                </div>
-
             </div>
+            <div class="col-sm-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/dmci-opp.png" alt="DMCI"></a>
+                </div>
+            </div>
+            <div class="col-sm-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/filinvest-opp.png" alt="Filinvest"></a>
+                </div>
+            </div>
+            <div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/geoestate-opp.png" alt="Geo-Estate"></a>
+                </div>
+            </div>
+            <div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/robinsons-opp.png" alt="Robinsons"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/smdc-opp.png" alt="SMDC"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/vistaland-opp.png" alt="Vista Land"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/forbes-opp.png" alt="South Forbes"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/avida-opp.png" alt="Camella Condo Homes"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/grand monaco-opp.png" alt="Grand Monaco"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/eton-opp.png" alt="Eton"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/amaia-opp.png" alt="Amaia"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/brittany-opp.png" alt="Brittany"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/ayalaland-opp.png" alt="AyalaLand Premier"></a>
+                </div>
+            </div><div class="col-lg-4" id="partners-logo">
+                <div class="logo-container m-5">
+                    <a href="#"><img src="img/crownasia-opp.png" alt="Crown Asia"></a>
+                </div>
+            </div>
+           </div> 
         </div>
-    
-
     </div>
+
+    
 
     
 

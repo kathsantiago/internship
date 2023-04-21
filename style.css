@@ -1,23 +1,118 @@
-@media(min-widt:992px){
-    .navbar-expand-lg .navbar-collapse{
-        width: 100%;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+/* color: #131e3a */
+/* color: #fcd812 */
+:root {
+  --darkblue: #131e3a;
+  --yellow: #fcd812;
+  --line: #ff725d;
+  --white:#ffffff;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    color: var(--darkblue);
+    margin: 0;
+    padding: 0;
+  }
+
+/* NAVBAR */
+.navbar-brand img,
+.nav-link img {
+  width: 230.25px;
+  height: 47.4px;
+}
+
+.nav-link {
+  color: var(--darkblue);
+}
+
+.nav-link:hover {
+  color: #072a83;
+}
+
+.bi-calculator {
+  background-color: var(--darkblue);
+  padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+  border-radius: 50%;
+}
+
+.navbar-collapse.show {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100vw;
+}
+
+.bi-x {
+  display: none;
+}
+
+.navbar-toggler[aria-expanded=true] .bi-list {
+  display: none;
+}
+.navbar-toggler[aria-expanded=true] .bi-x {
+  display: inline;
+}
+
+.bot-links {
+  list-style: none;
+  height: 10dvh;
+  top: 90dvh;
+  left: 0;
+}
+
+.bot-links li {
+  height: 5dvh;
+}
+
+.bt-fb {
+  display: block;
+  width: 100vw;
+  background: white;
+}
+
+.bt-call {
+  display: block;
+  width: 100vw;
+  background: var(--darkblue);
+}
+
+.fs-6 {
+  font-size: 0.8rem !important;
+}
+
+.btn-light{
+    color: var(--darkblue)
+}
+.btn-light:hover{
+    background-color: var(--yellow);
+}
+.container .p-5 {
+    height: 500px;
 }
 
 #rep{
-    background-image: url(./img/banner2.jpg);
-	background-size: cover;
-	background-position: top center;
+    background: url(img/banner.png), linear-gradient(104deg, var(--darkblue) 55%, var(--white)86%);
+	background-size: auto;
+	background-position: top right;
 	position: relative;
 }
 
-hr{
-    display: block;
-    unicode-bidi: isolate;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    border-top: 3px solid #f42d09;
-    align-items: center;
+.partners-page-header h1, h2, p{
+    color: var(--white);
 }
+
+#title-line{ 
+  height: 10px;
+  width: 135px;
+  border-width:0;
+  background-color:#ff0000;
+  position: relative;
+  margin: auto;
+}
+
+
+
